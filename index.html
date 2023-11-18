@@ -5,14 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introduccion a CSS</title>
+
+  <style>
+    /* regla CSS: selector{
+      propiedad:valor;
+    } */
+    header {
+      background-color: #333;
+      border: 10px solid black;
+      padding: 20px;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 40px;
+    }
+  </style>
+
+  <!-- la forma mas recomendable de trabajar en css , es con  la opción 3,  (hoja de estilos en cascada) -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
 
+  <!-- Tenemos tres formas de agregar css a nuestro documento:
+    1-Estilos en linea
+    2-Etiqueta style
+    3- Con hoja de estilos en cascada
+  
+  -->
+
   <!-- 1-Encabezado con estilos en línea -->
-  <header>
-    <h1>Introduccion a HTML</h1>
+  <header style="background-color: #333; border: 10px solid black; padding: 20px;">
+    <h1 style="color: orange; font-size: 40px;">Introducción a CSS</h1>
   </header>
 
 
@@ -20,21 +47,22 @@
 
   <!-- 2- Con etiqueta style -->
   <header>
-    <h1>Introduccion a HTML</h1>
+    <h1>Introducción a CSS</h1>
   </header>
 
   <br><br><br>
 
   <!-- 3- Con hoja de estilos externa-->
   <header>
-    <h1>Introduccion a HTML</h1>
+    <h1>Introducción a CSS</h1>
   </header>
 
   <!-- Contenido principal -->
   <main>
     <!-- Sección 1 -->
     <section id="capitulo1">
-      <p class="txt-primary txt-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea facilis,
+      <p class="txt-primary txt-small section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea
+        facilis,
         tenetur ab
         vel cumque aperiam
         dignissimos repellat nobis! Exercitationem sequi dolorum, quibusdam ratione culpa odit dolor ex neque voluptas
@@ -43,7 +71,7 @@
 
     <!-- Sección 2 -->
     <section>
-      <p class="txt-secondary txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque
+      <p class="txt-secondary txt-big fermin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque
         veritatis
         laboriosam blanditiis
         asperiores at. Veritatis rerum molestiae optio sit harum nostrum atque! Ab, dicta. Vitae, recusandae. Blanditiis
@@ -52,8 +80,8 @@
 
       <!-- Lista -->
       <ul class="padre">
-        <li class="hijo">Element <span>#1</span></li>
-        <li class="hijo">Element <span>#2</span></li>
+        <li class="hijo ul__li--unico">Element <span>#1</span></li>
+        <li class="hijo ul__li--unico2">Element <span>#2</span></li>
         <li class="hijo">Element <span>#3</span></li>
       </ul>
     </section>
